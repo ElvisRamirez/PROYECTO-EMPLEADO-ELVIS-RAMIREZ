@@ -1,2 +1,639 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jSNrIFJREey1_avWTRpG0w" name="ProyectoEmpleado"/>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_jSNrIFJREey1_avWTRpG0w" name="ProyectoEmpleado">
+    <eAnnotations xmi:id="_oGgKMFpMEeyLZv8WBZaCrg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_oGgxQFpMEeyLZv8WBZaCrg" source="codegen">
+        <details xmi:id="_oGgxQVpMEeyLZv8WBZaCrg" key="codegenDirectory" value="/ProyectoEmpleado/src"/>
+        <details xmi:id="_oq4CkFpMEeyLZv8WBZaCrg" key="AssociatedSourceCode" value="/ProyectoEmpleado/src/modelo/mundo/Empleado.java;2040255512/1;/ProyectoEmpleado/src/modelo/mundo/Fecha.java;520105775/1;/ProyectoEmpleado/src/modelo/mundo/Principal.java;2128767648/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_oHPKAFpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPKAVpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPKAlpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPKA1pMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPKBFpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPxEFpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPxEVpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_oHPxElpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_oHu5QFpMEeyLZv8WBZaCrg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oAQYQFpMEeyLZv8WBZaCrg" name="modelo">
+      <packagedElement xmi:type="uml:Package" xmi:id="_oCP8UFpMEeyLZv8WBZaCrg" name="mundo">
+        <packagedElement xmi:type="uml:Class" xmi:id="_oCbigFpMEeyLZv8WBZaCrg" name="Empleado">
+          <ownedAttribute xmi:id="_oS61kFpMEeyLZv8WBZaCrg" name="nombreEmpleado" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oS8qwFpMEeyLZv8WBZaCrg" name="apellidoEmpleado" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oS944FpMEeyLZv8WBZaCrg" name="genero" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oS-f8FpMEeyLZv8WBZaCrg" name="imagen" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oS-f8VpMEeyLZv8WBZaCrg" name="salario">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_oS_HAFpMEeyLZv8WBZaCrg" name="fechaNacimiento" type="_oSq98FpMEeyLZv8WBZaCrg" isReadOnly="true" association="_oVK4UFpMEeyLZv8WBZaCrg"/>
+          <ownedAttribute xmi:id="_oS_uEFpMEeyLZv8WBZaCrg" name="fechaIngreso" type="_oSq98FpMEeyLZv8WBZaCrg" isReadOnly="true" association="_oVNUkFpMEeyLZv8WBZaCrg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oUaDUFpMEeyLZv8WBZaCrg" name="Empleado" specification="_oHzxwFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oUaqYFpMEeyLZv8WBZaCrg" type="_oCbigFpMEeyLZv8WBZaCrg" direction="return"/>
+            <language>java</language>
+            <body>nombreEmpleado = &quot;&quot;;&#xD;
+		apellidoEmpleado =&quot;&quot;;&#xD;
+		genero =&quot;&quot;;&#xD;
+		imagen= &quot;&quot;;&#xD;
+		salario=0.0;&#xD;
+		fechaNacimiento= new Fecha ();&#xD;
+		fechaIngreso= new Fecha ();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVC8gFpMEeyLZv8WBZaCrg" name="Empleado" specification="_oS1WAFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVC8gVpMEeyLZv8WBZaCrg" name="pnombreEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVC8glpMEeyLZv8WBZaCrg" name="papellidoEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVC8g1pMEeyLZv8WBZaCrg" name="pGenero">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVC8hFpMEeyLZv8WBZaCrg" name="pImagen">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVC8hVpMEeyLZv8WBZaCrg" name="pSalario">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVC8hlpMEeyLZv8WBZaCrg" name="pFechaN" type="_oSq98FpMEeyLZv8WBZaCrg"/>
+            <ownedParameter xmi:id="_oVC8h1pMEeyLZv8WBZaCrg" name="pFechaI" type="_oSq98FpMEeyLZv8WBZaCrg"/>
+            <ownedParameter xmi:id="_oVC8iFpMEeyLZv8WBZaCrg" type="_oCbigFpMEeyLZv8WBZaCrg" direction="return"/>
+            <language>java</language>
+            <body>nombreEmpleado = pnombreEmpleado;&#xD;
+		apellidoEmpleado =papellidoEmpleado;&#xD;
+		genero =pGenero;&#xD;
+		imagen= pImagen;&#xD;
+		salario=pSalario;&#xD;
+		fechaNacimiento=pFechaN;&#xD;
+		fechaIngreso=pFechaI;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVDjkFpMEeyLZv8WBZaCrg" name="getNombre" specification="_oH5RUFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVDjkVpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return nombreEmpleado;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVEKoFpMEeyLZv8WBZaCrg" name="getApellido" specification="_oH6fcFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVEKoVpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return apellidoEmpleado;&#xD;
+		&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVExsFpMEeyLZv8WBZaCrg" name="getFechaActual" specification="_oH7tkFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVFYwFpMEeyLZv8WBZaCrg" type="_oSq98FpMEeyLZv8WBZaCrg" direction="return"/>
+            <language>java</language>
+            <body>GregorianCalendar gc =new GregorianCalendar();&#xD;
+ 	int dia = gc.get(Calendar.DAY_OF_MONTH);&#xD;
+ 	int mes =gc.get(Calendar.MONTH);&#xD;
+ 	int anio= gc.get(Calendar.YEAR);&#xD;
+ 	Fecha fechaActual = new Fecha(dia,mes,anio);&#xD;
+ 	return fechaActual;&#xD;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVFYwVpMEeyLZv8WBZaCrg" name="setEmpleado" specification="_oH-w4FpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVFYwlpMEeyLZv8WBZaCrg" name="pnombreEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVFYw1pMEeyLZv8WBZaCrg" name="papellidoEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVFYxFpMEeyLZv8WBZaCrg" name="pGenero">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVFYxVpMEeyLZv8WBZaCrg" name="pImagen">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oVFYxlpMEeyLZv8WBZaCrg" name="pSalario">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>nombreEmpleado = pnombreEmpleado;&#xD;
+		apellidoEmpleado =papellidoEmpleado;&#xD;
+		genero =pGenero;&#xD;
+		imagen= pImagen;&#xD;
+		salario=pSalario;&#xD;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVF_0FpMEeyLZv8WBZaCrg" name="calcularAntiguedad" specification="_oIAmEFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVF_0VpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Fecha fechaActual = getFechaActual( );&#xD;
+ 	&#xD;
+ 	int antiguedad = fechaNacimiento.darDiferenciasEnMeses(fechaActual) / 12;&#xD;
+ 	return antiguedad;&#xD;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVGm4FpMEeyLZv8WBZaCrg" name="calcularEdad" specification="_oIBNIVpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVGm4VpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>int edad= fechaIngreso.darDiferenciasEnMeses(getFechaActual()) / 12;&#xD;
+ 	return edad;&#xD;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVGm4lpMEeyLZv8WBZaCrg" name="calcularPrestaciones" specification="_oIB0MVpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oVGm41pMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>int antiguedad=calcularAntiguedad();&#xD;
+ 	double prestaciones =((double)(antiguedad*salario));&#xD;
+ 	return prestaciones;&#xD;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oVHN8FpMEeyLZv8WBZaCrg" name="mostrarInformacion" specification="_oIDpYFpMEeyLZv8WBZaCrg">
+            <language>java</language>
+            <body>System.out.println(&quot;Datos del Empleado&quot;);&#xD;
+		System.out.println(&quot;Nombre: &quot; + nombreEmpleado);&#xD;
+		System.out.println(&quot;Apellido: &quot; + apellidoEmpleado);&#xD;
+		System.out.println(&quot;Genero: &quot; + genero);&#xD;
+		System.out.println(&quot;Edad:&quot;+  calcularEdad());&#xD;
+		System.out.println(&quot;Salario: &quot; + salario);&#xD;
+		System.out.println(&quot;Prestaciones: &quot; + calcularPrestaciones());&#xD;
+		System.out.println(&quot;Antiguedad: &quot; + calcularAntiguedad());&#xD;
+ 	&#xD;
+ 	&#xD;
+ </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_oHzxwFpMEeyLZv8WBZaCrg" name="Empleado" method="_oUaDUFpMEeyLZv8WBZaCrg">
+            <eAnnotations xmi:id="_oH0_4FpMEeyLZv8WBZaCrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_oH1m8FpMEeyLZv8WBZaCrg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_oH1m8VpMEeyLZv8WBZaCrg" type="_oCbigFpMEeyLZv8WBZaCrg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oH5RUFpMEeyLZv8WBZaCrg" name="getNombre" method="_oVDjkFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oH54YFpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oH6fcFpMEeyLZv8WBZaCrg" name="getApellido" method="_oVEKoFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oH7GgFpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oH7tkFpMEeyLZv8WBZaCrg" name="getFechaActual" method="_oVExsFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oS3yQFpMEeyLZv8WBZaCrg" type="_oSq98FpMEeyLZv8WBZaCrg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oH-w4FpMEeyLZv8WBZaCrg" name="setEmpleado" method="_oVFYwVpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oH-w4VpMEeyLZv8WBZaCrg" name="pnombreEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oH-w4lpMEeyLZv8WBZaCrg" name="papellidoEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oH_X8FpMEeyLZv8WBZaCrg" name="pGenero">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oH_X8VpMEeyLZv8WBZaCrg" name="pImagen">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oH_X8lpMEeyLZv8WBZaCrg" name="pSalario">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oIAmEFpMEeyLZv8WBZaCrg" name="calcularAntiguedad" method="_oVF_0FpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oIBNIFpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oIBNIVpMEeyLZv8WBZaCrg" name="calcularEdad" method="_oVGm4FpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oIB0MFpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oIB0MVpMEeyLZv8WBZaCrg" name="calcularPrestaciones" method="_oVGm4lpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_oICbQFpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_oIDpYFpMEeyLZv8WBZaCrg" name="mostrarInformacion" method="_oVHN8FpMEeyLZv8WBZaCrg"/>
+          <ownedOperation xmi:id="_oS1WAFpMEeyLZv8WBZaCrg" name="Empleado" method="_oVC8gFpMEeyLZv8WBZaCrg">
+            <eAnnotations xmi:id="_oS2kIlpMEeyLZv8WBZaCrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_oS3LMFpMEeyLZv8WBZaCrg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_oS1WAVpMEeyLZv8WBZaCrg" name="pnombreEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oS19EFpMEeyLZv8WBZaCrg" name="papellidoEmpleado">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oS19EVpMEeyLZv8WBZaCrg" name="pGenero">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oS19ElpMEeyLZv8WBZaCrg" name="pImagen">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oS19E1pMEeyLZv8WBZaCrg" name="pSalario">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_oS2kIFpMEeyLZv8WBZaCrg" name="pFechaN" type="_oSq98FpMEeyLZv8WBZaCrg"/>
+            <ownedParameter xmi:id="_oS2kIVpMEeyLZv8WBZaCrg" name="pFechaI" type="_oSq98FpMEeyLZv8WBZaCrg"/>
+            <ownedParameter xmi:id="_oS3LMVpMEeyLZv8WBZaCrg" type="_oCbigFpMEeyLZv8WBZaCrg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oSq98FpMEeyLZv8WBZaCrg" name="Fecha">
+          <ownedAttribute xmi:id="_s_He8FpMEeyLZv8WBZaCrg" name="dia" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_s_IGAFpMEeyLZv8WBZaCrg" name="mes" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_s_ItEFpMEeyLZv8WBZaCrg" name="anio" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_JUIFpMEeyLZv8WBZaCrg" name="Fecha" specification="_s-SYgFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_JUIVpMEeyLZv8WBZaCrg" name="pDia">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_s_JUIlpMEeyLZv8WBZaCrg" name="pMes">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_s_JUI1pMEeyLZv8WBZaCrg" name="pAnio">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_s_JUJFpMEeyLZv8WBZaCrg" type="_oSq98FpMEeyLZv8WBZaCrg" direction="return"/>
+            <language>java</language>
+            <body>dia= pDia;&#xD;
+	mes= pMes;&#xD;
+	anio= pAnio;&#xD;
+	&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_J7MFpMEeyLZv8WBZaCrg" name="Fecha" specification="_s-TmoFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_J7MVpMEeyLZv8WBZaCrg" type="_oSq98FpMEeyLZv8WBZaCrg" direction="return"/>
+            <language>java</language>
+            <body>dia=0;&#xD;
+	mes=0;&#xD;
+	anio=0;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_J7MlpMEeyLZv8WBZaCrg" name="pDia" specification="_s-U0wFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_J7M1pMEeyLZv8WBZaCrg" name="dia">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(dia> 0 &amp;&amp; dia&lt;32) {&#xD;
+		this.dia=dia;&#xD;
+	}else {&#xD;
+		System.out.println(&quot;El dia ingresado es incorrecto&quot;);&#xD;
+	}&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_KiQFpMEeyLZv8WBZaCrg" name="pMes" specification="_s-Vb0FpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_KiQVpMEeyLZv8WBZaCrg" name="mes">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(mes> 0 &amp;&amp; mes&lt;13) {&#xD;
+		this.mes=mes;&#xD;
+	}else {&#xD;
+		System.out.println(&quot;El mes ingresado es incorrecto&quot;);&#xD;
+	}&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_KiQlpMEeyLZv8WBZaCrg" name="pAnio" specification="_s-WC4VpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_KiQ1pMEeyLZv8WBZaCrg" name="anio">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(anio>0) {&#xD;
+		this.anio=anio;&#xD;
+	}else {&#xD;
+		System.out.println(&quot;El año ingresado es incorrecto&quot;);&#xD;
+	}&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_LJUFpMEeyLZv8WBZaCrg" name="darDiferenciasEnMeses" specification="_s_GQ0FpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_LJUVpMEeyLZv8WBZaCrg" name="pFecha" type="_oSq98FpMEeyLZv8WBZaCrg"/>
+            <ownedParameter xmi:id="_s_LJUlpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>int numeroMeses=0;&#xD;
+	int difAnios = pFecha.getAnio();&#xD;
+	int difMes=pFecha.getMes();&#xD;
+	int difDia=pFecha.getDia();&#xD;
+	numeroMeses =12*(difAnios-anio) + (difMes -mes);&#xD;
+	if (difDia&lt;dia)&#xD;
+	{&#xD;
+		numeroMeses--;&#xD;
+	}&#xD;
+		return numeroMeses;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_s_LJU1pMEeyLZv8WBZaCrg" name="toString" specification="_s-X4EFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_LJVFpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return dia + &quot;-&quot; + mes + &quot;-&quot; +anio;&#xD;
+&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_s-SYgFpMEeyLZv8WBZaCrg" name="Fecha" method="_s_JUIFpMEeyLZv8WBZaCrg">
+            <eAnnotations xmi:id="_s-S_kVpMEeyLZv8WBZaCrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_s-S_klpMEeyLZv8WBZaCrg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_s-SYgVpMEeyLZv8WBZaCrg" name="pDia">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_s-SYglpMEeyLZv8WBZaCrg" name="pMes">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_s-S_kFpMEeyLZv8WBZaCrg" name="pAnio">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_s-S_k1pMEeyLZv8WBZaCrg" type="_oSq98FpMEeyLZv8WBZaCrg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s-TmoFpMEeyLZv8WBZaCrg" name="Fecha" method="_s_J7MFpMEeyLZv8WBZaCrg">
+            <eAnnotations xmi:id="_s-TmoVpMEeyLZv8WBZaCrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_s-TmolpMEeyLZv8WBZaCrg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_s-UNsFpMEeyLZv8WBZaCrg" type="_oSq98FpMEeyLZv8WBZaCrg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s-U0wFpMEeyLZv8WBZaCrg" name="pDia" method="_s_J7MlpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s-U0wVpMEeyLZv8WBZaCrg" name="dia">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s-Vb0FpMEeyLZv8WBZaCrg" name="pMes" method="_s_KiQFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s-WC4FpMEeyLZv8WBZaCrg" name="mes">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s-WC4VpMEeyLZv8WBZaCrg" name="pAnio" method="_s_KiQlpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s-Wp8FpMEeyLZv8WBZaCrg" name="anio">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s-X4EFpMEeyLZv8WBZaCrg" name="toString" method="_s_LJU1pMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s-X4EVpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_s_GQ0FpMEeyLZv8WBZaCrg" name="darDiferenciasEnMeses" method="_s_LJUFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_s_GQ0VpMEeyLZv8WBZaCrg" name="pFecha" type="_oSq98FpMEeyLZv8WBZaCrg"/>
+            <ownedParameter xmi:id="_s_G34FpMEeyLZv8WBZaCrg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oVK4UFpMEeyLZv8WBZaCrg" name="" memberEnd="_oVK4UVpMEeyLZv8WBZaCrg _oS_HAFpMEeyLZv8WBZaCrg">
+          <ownedEnd xmi:id="_oVK4UVpMEeyLZv8WBZaCrg" name="" type="_oCbigFpMEeyLZv8WBZaCrg" association="_oVK4UFpMEeyLZv8WBZaCrg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_oVNUkFpMEeyLZv8WBZaCrg" name="" memberEnd="_oVNUkVpMEeyLZv8WBZaCrg _oS_uEFpMEeyLZv8WBZaCrg">
+          <ownedEnd xmi:id="_oVNUkVpMEeyLZv8WBZaCrg" name="" type="_oCbigFpMEeyLZv8WBZaCrg" association="_oVNUkFpMEeyLZv8WBZaCrg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tabh8FpMEeyLZv8WBZaCrg" name="Principal">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tbBX0FpMEeyLZv8WBZaCrg" name="main" specification="_tad-MFpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_tbBX0VpMEeyLZv8WBZaCrg" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tbBX0lpMEeyLZv8WBZaCrg" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>// TODO Auto-generated method stub&#xD;
+ Empleado empleado1=null;&#xD;
+	String nombreEmpleados;&#xD;
+	String apellidoEmpleados;&#xD;
+	String genero;&#xD;
+	double salario;&#xD;
+	int dia=0, mes=0,anio=0;&#xD;
+	int opcion=0;&#xD;
+	Scanner ingreso = new Scanner (System.in);&#xD;
+	Fecha fechaNacimiento = null;&#xD;
+	Fecha fechaIngresos;&#xD;
+//Opciones del Empleado&#xD;
+	boolean salir = false;&#xD;
+ &#xD;
+ while(!salir) {&#xD;
+ System.out.println(&quot;************************************************&quot;);&#xD;
+ System.out.println(&quot;************MENU DE OPCIONES****************&quot;);&#xD;
+ System.out.println(&quot;************************************************&quot;);&#xD;
+	System.out.println(&quot;        1.&lt;-Ingresar datos del empleado&quot;);&#xD;
+	System.out.println(&quot;        2.&lt;- Calcular la edad del empleado&quot;);&#xD;
+	System.out.println(&quot;        3.&lt;-Calcular la antiguedad del empleado en la empresa&quot;);&#xD;
+	System.out.println(&quot;        4.&lt;-Calcular las prestaciones del empleado&quot;);&#xD;
+	System.out.println(&quot;        5.&lt;-Mostrar la informacion del empleado&quot;);&#xD;
+	System.out.println(&quot;        6. &lt;-Salir&quot;);&#xD;
+	System.out.println(&quot;************************************************&quot;);&#xD;
+	System.out.println(&quot;        Ingrese un de las opciones&quot;);&#xD;
+	System.out.println(&quot;************************************************&quot;);&#xD;
+	opcion=ingreso.nextInt();&#xD;
+	&#xD;
+	switch(opcion) {&#xD;
+	&#xD;
+	&#xD;
+	case 1:&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+			try {&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+			System.out.println(&quot;         Ingrese los datos del Empleado&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+			System.out.println(&quot;Nombre: &quot;);&#xD;
+			nombreEmpleados= ingreso.next();&#xD;
+			}catch (InputMismatchException e) {&#xD;
+				System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+				nombreEmpleados=ingreso.next();&#xD;
+				&#xD;
+			}&#xD;
+		&#xD;
+			System.out.println(&quot;Apellido: &quot;);&#xD;
+			apellidoEmpleados=ingreso.next();&#xD;
+			System.out.println(&quot;Género :&quot;);&#xD;
+			genero=ingreso.next();&#xD;
+		&#xD;
+	do {&#xD;
+		try {&#xD;
+	&#xD;
+			System.out.println(&quot;Ingrese su dia de Nacimiento: &quot;);&#xD;
+			dia=ingreso.nextInt();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			dia=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(dia&lt;0);&#xD;
+	do {&#xD;
+		try {&#xD;
+			System.out.println(&quot;Ingrese su mes de Nacimiento: &quot;);&#xD;
+			mes=ingreso.nextInt();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			mes=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(mes&lt;0);&#xD;
+	do {&#xD;
+		try {&#xD;
+			System.out.println(&quot;Ingrese su anio de Nacimiento: &quot;);&#xD;
+			anio=ingreso.nextInt();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			anio=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(anio&lt;=1885);	&#xD;
+			fechaNacimiento=new Fecha (dia,mes,anio);&#xD;
+	do {&#xD;
+		try {&#xD;
+			System.out.println(&quot;Salario: &quot;);&#xD;
+			salario=ingreso.nextDouble();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			salario=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(salario&lt;=385);&#xD;
+	do {&#xD;
+		try {&#xD;
+			System.out.println(&quot;Ingrese su dia de Ingreso: &quot;);&#xD;
+			dia=ingreso.nextInt();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			dia=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(dia&lt;0);	&#xD;
+	do {&#xD;
+		try {&#xD;
+			System.out.println(&quot;Ingrese su mes de Ingreso: &quot;);&#xD;
+			mes=ingreso.nextInt();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			mes=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(mes&lt;0);	&#xD;
+	do {&#xD;
+		try {&#xD;
+			System.out.println(&quot;Ingrese su anio de Ingreso: &quot;);&#xD;
+			anio=ingreso.nextInt();&#xD;
+		}catch (Exception e) {&#xD;
+			System.out.println(&quot;Ingrese datos correctos: &quot;);&#xD;
+			anio=0;&#xD;
+			ingreso.nextInt();&#xD;
+		}&#xD;
+	}while(anio&lt;=1885);	&#xD;
+			fechaIngresos=new Fecha (dia,mes,anio);&#xD;
+			empleado1=new Empleado(nombreEmpleados, apellidoEmpleados, genero,&quot;&quot;, salario,fechaIngresos,fechaNacimiento);&#xD;
+		break;&#xD;
+		&#xD;
+	case 2:&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;             Usted ha escogido la opción 3&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;La edad del empleado es:&quot;);&#xD;
+	&#xD;
+		fechaNacimiento=new Fecha (dia,mes,anio);&#xD;
+		&#xD;
+		System.out.println(empleado1.calcularEdad());&#xD;
+		break;&#xD;
+	case 3:&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;             Usted ha escogido la opción 3&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+			System.out.println(&quot;La antiguedad del empleado es:&quot;);&#xD;
+			&#xD;
+			System.out.println(empleado1.calcularAntiguedad());&#xD;
+ 	   &#xD;
+		&#xD;
+		break;&#xD;
+	case 4:&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;             Usted ha escogido la opción 4&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		&#xD;
+			System.out.println(empleado1.calcularPrestaciones());&#xD;
+		&#xD;
+		break;&#xD;
+	case 5:&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;            Usted ha escogido la opción 5&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		empleado1.mostrarInformacion();&#xD;
+		break;&#xD;
+	case 6: &#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;              Gracias por su ingreso&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		salir=true;&#xD;
+		break;&#xD;
+	default:&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+		System.out.println(&quot;           Eliga un numero del 1 al 6&quot;);&#xD;
+		System.out.println(&quot;*********************************************************&quot;);&#xD;
+	}&#xD;
+	&#xD;
+  }&#xD;
+	&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_tad-MFpMEeyLZv8WBZaCrg" name="main" isStatic="true" method="_tbBX0FpMEeyLZv8WBZaCrg">
+            <ownedParameter xmi:id="_taelQFpMEeyLZv8WBZaCrg" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_taelQVpMEeyLZv8WBZaCrg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oBo4UFpMEeyLZv8WBZaCrg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_oBpfYFpMEeyLZv8WBZaCrg" name="util">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_oRAKAFpMEeyLZv8WBZaCrg" name="Calendar"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_oSKnoFpMEeyLZv8WBZaCrg" name="GregorianCalendar"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ta-UgFpMEeyLZv8WBZaCrg" name="InputMismatchException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ta_ioVpMEeyLZv8WBZaCrg" name="Scanner"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_oCcJkFpMEeyLZv8WBZaCrg">
+      <eAnnotations xmi:id="_oFSpQFpMEeyLZv8WBZaCrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:Reference xmi:id="_oRRPwFpMEeyLZv8WBZaCrg" base_Element="_oRAKAFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:Reference xmi:id="_oSLOsFpMEeyLZv8WBZaCrg" base_Element="_oSKnoFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oS8DsFpMEeyLZv8WBZaCrg" base_Element="_oS61kFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oS9R0FpMEeyLZv8WBZaCrg" base_Element="_oS8qwFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:Reference xmi:id="_oVMtgFpMEeyLZv8WBZaCrg" base_Element="_oVK4UFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:Reference xmi:id="_oVOisFpMEeyLZv8WBZaCrg" base_Element="_oVNUkFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:Reference xmi:id="_ta_ioFpMEeyLZv8WBZaCrg" base_Element="_ta-UgFpMEeyLZv8WBZaCrg"/>
+  <UMLLabProfile:Reference xmi:id="_tbAwwFpMEeyLZv8WBZaCrg" base_Element="_ta_ioVpMEeyLZv8WBZaCrg"/>
+</xmi:XMI>
